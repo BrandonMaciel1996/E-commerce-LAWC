@@ -8,7 +8,7 @@ function setProductoActual(producto) {
   productoActual = producto;
 }
 
-fetch('E-commerce-LAWC/views/modals/modal-detail.html')
+fetch('views/modals/modal-detail.html')
   .then(response => response.text())
   .then(html => {
     document.body.insertAdjacentHTML('beforeend', html);
